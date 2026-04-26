@@ -1,0 +1,25 @@
+[package]
+name = "example-mcp-tools-rs"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Expose a durable Resonate workflow as an MCP tool over stdio."
+
+[[bin]]
+name = "weather-server"
+path = "src/bin/weather_server.rs"
+
+[[bin]]
+name = "worker"
+path = "src/bin/worker.rs"
+
+[dependencies]
+resonate = { package = "resonate-sdk", git = "https://github.com/resonatehq/resonate-sdk-rs", branch = "main" }
+rmcp = { version = "1.5", features = ["server", "macros", "transport-io"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+schemars = "1"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
