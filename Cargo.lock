@@ -1099,8 +1099,9 @@ dependencies = [
 
 [[package]]
 name = "resonate-sdk"
-version = "0.1.0"
-source = "git+https://github.com/resonatehq/resonate-sdk-rs?branch=main#63c348b04ed000755ed09d0a5d8b1abaea0d5c05"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "463c32ca68eff34fb2a125ef7e70cba55a7987a20e494546bf48736e7208cd7c"
 dependencies = [
  "async-trait",
  "base64",
@@ -1109,6 +1110,7 @@ dependencies = [
  "parking_lot",
  "reqwest",
  "resonate-sdk-macros",
+ "seahash",
  "serde",
  "serde_json",
  "thiserror",
@@ -1119,7 +1121,8 @@ dependencies = [
 [[package]]
 name = "resonate-sdk-macros"
 version = "0.1.0"
-source = "git+https://github.com/resonatehq/resonate-sdk-rs?branch=main#63c348b04ed000755ed09d0a5d8b1abaea0d5c05"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "44421aec4e413410614f7a02436fa65c4571d966d61885fc2360ca3eca078069"
 dependencies = [
  "proc-macro-crate",
  "proc-macro2",
@@ -1274,6 +1277,12 @@ name = "scopeguard"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+
+[[package]]
+name = "seahash"
+version = "4.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b"
 
 [[package]]
 name = "security-framework"
