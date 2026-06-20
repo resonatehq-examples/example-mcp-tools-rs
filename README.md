@@ -10,7 +10,7 @@
 
 This example showcases how to expose a durable Resonate workflow as a [Model Context Protocol](https://modelcontextprotocol.io) tool, so an LLM client like Claude Desktop can invoke it directly.
 
-Instructions on [How to run this example](#how-to-run-the-example) are below. The full pattern is documented at [docs.resonatehq.io/get-started/examples/mcp-tools](https://docs.resonatehq.io/get-started/examples/mcp-tools).
+Instructions on [How to run this example](#how-to-run-the-example) are below. The full pattern is documented at [docs.resonatehq.io/get-started/examples/mcp-tools](https://docs.resonatehq.io/get-started/examples/async-agent-tools).
 
 ## What it does
 
@@ -135,6 +135,6 @@ Claude will call `get_forecast`, the MCP server will RPC into the worker, and th
 ## Learn more
 
 - [Resonate Documentation](https://docs.resonatehq.io)
-- [MCP Tools Pattern](https://docs.resonatehq.io/get-started/examples/mcp-tools)
+- [MCP Tools Pattern](https://docs.resonatehq.io/get-started/examples/async-agent-tools)
 - [Rust SDK Guide](https://docs.resonatehq.io/develop/rust)
 - [Model Context Protocol](https://modelcontextprotocol.io)
